@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar-brand{
+    padding: 0;
+    margin-right: 10px;
+}
+li {
+    height: 67px;
+    margin-left: 40px;
+}
+li>a.about{
+    height: 67px;
+    line-height: 35px;
+}
+.modal-footer{
+    margin-top: 55px;
+}
+.swiper-container {
+    padding-bottom:40px;
+}
+.swiper-slide {
+    width:1300px;
+    transition-timing-function:linear;
+}
+@media only screen and (max-width:1200px){
+    .swiper-slide {
+        width:1300px;
+    }
+}
+@media only screen and (max-width:980px){
+    .swiper-slide {
+        width:471px;
+    }
+}
+@media only screen and (max-height:480px){
+    .swiper-slide {
+        width:471px;
+    }
+}
+.swiper-slide img{
+    width:100%;
+    border-radius: 4px;
+}
+
+.left{
+    width: 50%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-content:center;
+}
+.right{
+    width: 50%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-content:center;
+}
+.jpg-box{
+    margin: 40px 0;
+}
+.btn-group{
+    width: 110px;
+    height: 35px;
+    margin: auto;
+}
+
+#big-box{
+    width: auto;
+    height: 400px;
+    margin: 10%;
+}
+.sm-box{
+    display: inline-flex;
+    margin: 8%;
+}
+.sm-box img{
+    padding-right: 10px;
+    cursor: pointer;
+}
+.egg-box{
+    position: relative;
+}
+.click-box img{
+    position: absolute;
+    top: 70%;
+    left: 25%;
+}
+@media screen and (min-width: 992px){
+    .MT{
+        margin-bottom: 20px;
+    }
+}
+.GP1{
+    margin-right: 50px;
+    margin-bottom: 34px;
+}
+.GP2{
+    margin-right: 50px;
+}
+
+.hover-img1 img,.hover-img2 img,.list-group-item{
+    cursor: pointer;
+}
+
+
+footer{
+    background-color: #fff;
+}
+.copy{
+    float: right;
+    color: #666666;
+}
+.shower{
+    display: block;
+}
