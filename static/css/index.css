@@ -46,14 +46,17 @@ li>a.about{
 
 .left{
     width: 50%;
-    height: 700px;
     display: flex;
     flex-direction: column;
     align-content:center;
 }
+@media screen and (max-width: 768px) {
+    .left{
+        width: 100%;
+    }
+ }
 .right{
     width: 50%;
-    height: 700px;
     display: flex;
     flex-direction: column;
     align-content:center;
@@ -69,16 +72,24 @@ li>a.about{
 
 #big-box{
     width: auto;
-    height: 400px;
+    /* height: 400px; */
     margin: 10%;
 }
 .sm-box{
-    display: inline-flex;
     margin: 8%;
+}
+.sm-box ul li{
+    display: inline;
+    margin-left: 0;
+}
+.sm-box ul{
+    display: inline-flex;
 }
 .sm-box img{
     padding-right: 10px;
     cursor: pointer;
+    float: left;
+    /* display: inline; */
 }
 .egg-box{
     position: relative;
@@ -101,6 +112,13 @@ li>a.about{
     margin-right: 50px;
 }
 
+.hover-img1,.hover-img2{
+    display: flex;
+    margin-bottom: 20px;
+}
+.hover-img1 div,.hover-img2 div{
+    flex:1;
+}
 .hover-img1 img,.hover-img2 img,.list-group-item{
     cursor: pointer;
 }
