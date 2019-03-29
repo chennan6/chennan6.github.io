@@ -11,13 +11,12 @@
     <link rel="stylesheet" href="../static/css/index.css">
 </head>
 <body>
-<header class="container-fluid">
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed"
-                        data-toggle="collapse" data-target="#navbar-collapse-1"
-                        aria-expanded="false">
+                <button type="button" class="navbar-toggle"
+                        data-toggle="collapse" data-target="#navbar">
+                        <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -26,7 +25,7 @@
                     <img src="../images/logo.png">
                 </a>
             </div>
-            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+            <div class="navbar-collapse collapse" id="navbar">
                 <ul class="nav navbar-nav">
                     <li>
                         <a href="javascript:void(0)" name="#matong">
@@ -77,8 +76,7 @@
             </div>
         </div>
     </nav>
-</header>
-
+    
 <!--中间区域-->
 <div>
     <!--首页-->
@@ -113,7 +111,7 @@
             <!--彩色马桶-->
             <div class="container">
                 <div class="pull-left">
-                    <img src="../images/Colours.jpg"/>
+                    <img src="../images/Colours.jpg" class="img-responsive"/>
                 </div>
                 <div class="right">
                     <div>
@@ -137,14 +135,16 @@
                         </table>
                     </div>
                     <div class="jpg-box">
-                        <a target="_blank" href="https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-15049764657.29.2d0a448dKmPr9D&id=565684708722"><img src="../images/Cblue.jpg"/></a>
+                        <a target="_blank" href="https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-15049764657.29.2d0a448dKmPr9D&id=565684708722">
+                            <img src="../images/Cblue.jpg" class="img-responsive"/>
+                        </a>
                         <h6 class="pull-right">
                             <span class="glyphicon glyphicon-asterisk"></span>
                             点击图片购买
                         </h6>
                     </div>
                     <div class="btn-group" role="group">
-                        <button type="button" class="btn btn-info" value="Cblue">蓝色</button>                       </button>
+                        <button type="button" class="btn btn-info" value="Cblue">蓝色</button>
                         <button type="button" class="btn btn-danger" value="Cred">红色</button>
                     </div>
                 </div>
@@ -153,27 +153,35 @@
             <!--钻石马桶-->
             <div class="container">
                 <div class="pull-right">
-                    <img src="../images/Diamond.jpg"/>
+                    <img src="../images/Diamond.jpg"  class="img-responsive"/>
                 </div>
                 <div class="left">
                     <div id="big-box">
                         <a target="_blank" href="https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-15049764657.32.2d0a448d39Jz1t&id=539155944387">
-                            <img src="../images/Dblack.jpg"/>
+                            <img src="../images/Dblack.jpg" class="img-responsive"/>
                         </a>
                     </div>
-                    <div class="sm-box">
-                        <img src="../images/Dblack-sm.jpg"/>
-                        <img src="../images/Dred-sm.jpg"/>
-                        <img src="../images/Dblue-sm.jpg"/>
-                        <img src="../images/Dgreen-sm.jpg"/>
-                        <img src="../images/Dyellow-sm.jpg"/>
+                    <div class="container sm-box">
+                        <ul>
+                            <li>
+                                <img src="../images/Dblack-sm.jpg" class="img-responsive"/>
+                            </li><li>
+                                <img src="../images/Dred-sm.jpg" class="img-responsive"/>
+                            </li><li>
+                                <img src="../images/Dblue-sm.jpg" class="img-responsive"/>
+                            </li><li>
+                                <img src="../images/Dgreen-sm.jpg" class="img-responsive"/>
+                            </li><li>
+                                <img src="../images/Dyellow-sm.jpg" class="img-responsive"/>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
             <div class="modal-footer clearfloat"></div>
             <!--鸡蛋马桶-->
             <div class="container egg-box">
-                <img src="../images/egg1.jpg"/>
+                <img src="../images/egg1.jpg" class="img-responsive"/>
                 <div class="click-box">
                     <a target="_blank" href="https://item.taobao.com/item.htm?spm=2013.1.w4023-15049764641.11.65ddcce4h7AbIm&id=569980201674">
                         <img src="../images/Click.gif" height="60" width="60"/>
@@ -185,32 +193,32 @@
             <div class="container">
                 <div class="col-md-3 MT col-xs-6">
                     <a target="_blank" href="https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-15049764657.38.4bbe448dJwKK79&id=580780921189">
-                        <img src="../images/MT1.jpg">
+                        <img src="../images/MT1.jpg" class="img-responsive">
                     </a>
                 </div>
                 <div class="col-md-3 col-md-offset-1 MT col-xs-6">
                     <a target="_blank" href="https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-15049764657.53.4bbe448dJwKK79&id=570064806381">
-                        <img src="../images/MT2.jpg">
+                        <img src="../images/MT2.jpg" class="img-responsive">
                     </a>
                 </div>
                 <div class="col-md-3 col-md-offset-1 MT col-xs-6">
                     <a target="_blank" href="https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-15049764657.50.4bbe448dJwKK79&id=536273635860">
-                        <img src="../images/MT3.jpg">
+                        <img src="../images/MT3.jpg" class="img-responsive">
                     </a>
                 </div>
                 <div class="col-md-3 col-xs-6">
                     <a target="_blank" href="https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-15049764657.41.4bbe448dJwKK79&id=544171202281">
-                        <img src="../images/MT4.jpg">
+                        <img src="../images/MT4.jpg" class="img-responsive">
                     </a>
                 </div>
                 <div class="col-md-3 col-md-offset-1 col-xs-6">
                     <a target="_blank" href="https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-15049764657.56.4bbe448dJwKK79&id=566072855682">
-                        <img src="../images/MT5.jpg">
+                        <img src="../images/MT5.jpg" class="img-responsive">
                     </a>
                 </div>
                 <div class="col-md-3 col-md-offset-1 col-xs-6">
                     <a target="_blank" href="https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-15049764657.59.4bbe448dJwKK79&id=575910435820">
-                        <img src="../images/MT6.jpg">
+                        <img src="../images/MT6.jpg" class="img-responsive">
                     </a>
                 </div>
             </div>
@@ -223,17 +231,17 @@
         <div class="container">
             <div class="pull-left">
                 <a target="_blank" href="https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-15049764657.86.4bbe448dJwKK79&id=566513754939">
-                    <img src="../images/GP.jpg" alt="">
+                    <img src="../images/GP.jpg" class="img-responsive" alt="">
                 </a>
             </div>
             <div class="pull-right GP1">
                 <a target="_blank" href="https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-15049764657.29.3c6d448d6mESIl&id=565396699006">
-                    <img src="../images/GP1.jpg" alt="">
+                    <img src="../images/GP1.jpg" class="img-responsive" alt="">
                 </a>
             </div>
             <div class="pull-right GP2">
                 <a target="_blank" href="https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-15049764657.26.3c6d448d6mESIl&id=565396335260">
-                    <img src="../images/GP2.jpg" alt="">
+                    <img src="../images/GP2.jpg" class="img-responsive" alt="">
                 </a>
             </div>
         </div>
@@ -246,50 +254,50 @@
             <div class="col-md-6">
                 <div class="show-bigimg1">
                     <a target="_blank" href="https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-15049764657.62.20c2448dMycFYm&id=583482125052">
-                        <img src="../images/LY.jpg">
+                        <img src="../images/LY.jpg" class="img-responsive">
                     </a>
                 </div>
                 <div style="height: 20px"></div>
                 <div class="hover-img1">
-                    <div class="col-md-2">
-                        <img src="../images/LY1.jpg" width="60px">
+                    <div class="col-md-2 col-xs-2">
+                        <img src="../images/LY1.jpg" class="img-responsive" width="60px">
                     </div>
-                    <div class="col-md-2">
-                        <img src="../images/LY2.jpg" width="60px">
+                    <div class="col-md-2 col-xs-2">
+                        <img src="../images/LY2.jpg" class="img-responsive" width="60px">
                     </div>
-                    <div class="col-md-2">
-                        <img src="../images/LY3.jpg" width="60px">
+                    <div class="col-md-2 col-xs-2">
+                        <img src="../images/LY3.jpg" class="img-responsive" width="60px">
                     </div>
-                    <div class="col-md-2">
-                        <img src="../images/LY4.jpg" width="60px">
+                    <div class="col-md-2 col-xs-2">
+                        <img src="../images/LY4.jpg" class="img-responsive" width="60px">
                     </div>
-                    <div class="col-md-2">
-                        <img src="../images/LY5.jpg" width="60px">
+                    <div class="col-md-2 col-xs-2">
+                        <img src="../images/LY5.jpg" class="img-responsive" width="60px">
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="show-bigimg2">
                     <a target="_blank" href="https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-15049764657.71.4bbe448dFqOBHq&id=536274547031">
-                        <img src="../images/HS.jpg">
+                        <img src="../images/HS.jpg" class="img-responsive">
                     </a>
                 </div>
                 <div style="height: 20px"></div>
                 <div class="hover-img2">
                     <div class="col-md-2">
-                        <img src="../images/HS1.jpg" width="60px">
+                        <img src="../images/HS1.jpg" class="img-responsive" width="60px">
                     </div>
                     <div class="col-md-2">
-                        <img src="../images/HS2.jpg" width="60px">
+                        <img src="../images/HS2.jpg" class="img-responsive" width="60px">
                     </div>
                     <div class="col-md-2">
-                        <img src="../images/HS3.jpg" width="60px">
+                        <img src="../images/HS3.jpg" class="img-responsive" width="60px">
                     </div>
                     <div class="col-md-2">
-                        <img src="../images/HS4.jpg" width="60px">
+                        <img src="../images/HS4.jpg" class="img-responsive" width="60px">
                     </div>
                     <div class="col-md-2">
-                        <img src="../images/HS5.jpg" width="60px">
+                        <img src="../images/HS5.jpg" class="img-responsive" width="60px">
                     </div>
                 </div>
             </div>
@@ -312,10 +320,10 @@
             </div>
             <div class="col-md-9">
                 <a class="BO" target="_blank" href="https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-15049764657.29.7c44448dQEEU3Q&id=588657135265">
-                    <img src="../images/BO.png">
+                    <img src="../images/BO.png" class="img-responsive">
                 </a>
                 <a class="OS hidden" target="_blank" href="https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-15049764657.92.20c2448dMycFYm&id=588498974333">
-                    <img src="../images/OS.jpg">
+                    <img src="../images/OS.jpg" class="img-responsive">
                 </a>
             </div>
         </div>
@@ -327,17 +335,17 @@
         <div class="container">
             <div class="col-md-3">
                 <a target="_blank" href="https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-15049764657.44.16b9448dJMWQYE&id=573977954478">
-                    <img src="../images/MTS.jpg">
+                    <img src="../images/MTS.jpg" class="img-responsive">
                 </a>
             </div>
             <div class="col-md-3 col-md-offset-1">
                 <a target="_blank" href="https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-15049764657.68.16b9448dJMWQYE&id=588698822418">
-                <img src="../images/ZWJ.jpg">
+                <img src="../images/ZWJ.jpg" class="img-responsive">
                 </a>
             </div>
             <div class="col-md-3 col-md-offset-1">
                 <a target="_blank" href="https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-15049764657.95.16b9448dJMWQYE&id=544829697542">
-                <img src="../images/MJJ.jpg">
+                <img src="../images/MJJ.jpg" class="img-responsive">
                 </a>
             </div>
         </div>
@@ -357,9 +365,9 @@
 
 <footer class="container-fluid">
     <div class="container">
-        <img src="../images/footer.png"/>
-        <div class="copy">
-            &copy香港悅瀾设计工作室版权所有
+        <img src="../images/footer.png" class="img-responsive"/>
+        <div class="center-block">
+            <p>&copy香港悅瀾设计工作室版权所有</p>
         </div>
     </div>
 </footer>
